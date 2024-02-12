@@ -1,0 +1,6 @@
+{
+  "watch": ["src/client", "src/components"],
+  "ext": "ts,tsx", 
+  "ignore": ["src/pages/**/*.ts"],
+  "exec": "node build.js && npm run build:css"
+}
