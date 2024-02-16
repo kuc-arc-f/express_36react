@@ -13,6 +13,14 @@
 express + vite, React MPA sample
 
 ***
+### setup
+
+* .env
+```
+#API_URL
+VITE_API_URL=http://localhost
+```
+***
 ### react-build
 
 ```
