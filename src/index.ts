@@ -10,7 +10,7 @@ import Test from './pages/Test';
 //import Contact from './pages/contact';';
 //
 //import testRouter from './routes/test'; 
-//import commonRouter from './routes/common';
+import commonRouter from './routes/commonRouter';
 //
 app.use(cors())
 app.use(express.json());
@@ -23,7 +23,7 @@ const errorObj = {ret: "NG", messase: "Error"};
 
 // route
 //app.use('/api/test', testRouter);
-//app.use('/api/common', commonRouter);
+app.use('/api/common', commonRouter);
 
 //MPA
 app.get('/test', (req: any, res: any) => {

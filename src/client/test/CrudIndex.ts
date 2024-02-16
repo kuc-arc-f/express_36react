@@ -38,11 +38,16 @@ console.log(postItem);
         try{
             let ret = false;
             const values = Crud.getInputValues();
-            values.userId = 0;
-            values.content = "";
-            values.completed = 1;
-//console.log(values);
-            const json = await HttpCommon.serverPost(values, '/api/test/create');
+            const item = {
+                "api_key": "",
+                "title": values.title,
+                "content": "content1",
+                "completed": 0,
+                "userId": 0
+            };            
+console.log(item);
+//return;
+            const json = await HttpCommon.serverPost(item, "/test/create");
 console.log(json);
             if (json.ret ===  LibConfig.OK_CODE) {
                 ret = true;
