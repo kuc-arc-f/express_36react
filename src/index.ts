@@ -7,6 +7,7 @@ const app = express();
 import Top from './pages/App';
 import About from './pages/about';
 import Test from './pages/Test';
+import TestShow from './pages/Test/TestShow';
 //import Contact from './pages/contact';';
 //
 //import testRouter from './routes/test'; 
@@ -26,12 +27,11 @@ const errorObj = {ret: "NG", messase: "Error"};
 app.use('/api/common', commonRouter);
 
 //MPA
+app.get('/test/show', (req: any, res: any) => {
+  try {res.send(renderToString(TestShow()));} catch (error) { res.sendStatus(500);}
+});
 app.get('/test', (req: any, res: any) => {
-  try {
-    res.send(renderToString(Test()));
-  } catch (error) {
-    res.sendStatus(500);
-  }
+  try {res.send(renderToString(Test()));} catch (error) { res.sendStatus(500);}
 });
 app.get('/about', (req: any, res: any) => {
   try {

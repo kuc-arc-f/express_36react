@@ -63,7 +63,7 @@ console.log("#Test4.getList");
     className="border border-gray-400 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500"
     />    
     <hr className="my-2" />
-    <button className="btn-purple" onClick={()=>addProc()}>Add
+    <button className="btn-purple" onClick={()=>addProc()}>Save
     </button>    
     <hr className="my-1" />
     {pageItems.map((item: any ,index: number) => {
