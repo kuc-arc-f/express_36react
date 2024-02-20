@@ -12,7 +12,7 @@
 auth sample
 
 ***
-* index.ts: user, passwor input
+* index.ts: user, password input
 ```
 app.use(basicAuth({
   users: { "test": "1111" },
