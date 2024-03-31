@@ -7,8 +7,8 @@ const app = express();
 import Top from './pages/App';
 import About from './pages/about';
 import Test from './pages/Test';
-import TestShow from './pages/Test/TestShow';
-//import Contact from './pages/contact';';
+import TestShow from './pages/Test/TestShow'; 
+//import Contact from './pages/contact';
 //
 //import testRouter from './routes/test'; 
 import commonRouter from './routes/commonRouter';
@@ -49,9 +49,8 @@ app.get('/', (req: any, res: any) => {
 });
 
 //start
-if (import.meta.env.PROD) {
-  app.listen(3000);
-}
-console.log('start');
-
-export const viteNodeApp = app;
+const PORT = 3000;
+app.listen({ port: PORT }, () => {
+  console.log(`Server ready at http://localhost:${PORT}`);
+});
+//export const viteNodeApp = app;

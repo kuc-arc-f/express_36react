@@ -10,7 +10,7 @@ function Page(){
   <div>
     <Head />
     <hr />
-    <h1 className="text-4xl font-bold">client/about</h1>
+    <h1 className="text-4xl font-bold">about!!</h1>
   </div>
   );
 }
