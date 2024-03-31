@@ -21,27 +21,13 @@ express + vite, React MPA sample
 VITE_API_URL=http://localhost
 ```
 ***
-### react-build
-
-```
-node build.js
-
-#watch
-yarn watch
-```
-
-***
-### express-build
+### build
 
 ```
 yarn build
-```
-
-* dev-start
-
-```
 yarn dev
 ```
+
 ***
 ### blog
 
