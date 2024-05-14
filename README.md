@@ -6,7 +6,7 @@
 
  date    : 2024/02/11
 
- update : 2024/04/30   
+ update : 2024/05/11   
 
 ***
 
@@ -20,6 +20,7 @@ express + vite, React MPA sample
 #API_URL
 VITE_API_URL=http://localhost
 ```
+
 ***
 ### build
 
@@ -27,6 +28,16 @@ VITE_API_URL=http://localhost
 yarn build
 yarn dev
 ```
+
+
+***
+### Sample
+
+* api_test: api sample
+
+* basic_auth: basic auth,  express-basic-auth use
+
+* simple_auth: simple auth, user data from .env 
 
 ***
 ### blog
