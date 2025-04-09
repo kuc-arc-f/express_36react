@@ -1,0 +1,40 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=develop nodemon",
+    "build": "npm run clean && npm run build:server && node buildClient.js && npm run build:css",
+    "build:server": "npx rolldown -c rolldown.config.js",
+    "build:css": "npx tailwindcss -i ./src/main.css -o ./public/static/main.css",
+    "build:test": "vite build",
+    "clean": "rimraf dist && rimraf public/static",
+    "watch": "npx nodemon"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.2",
+    "log4js": "^6.4.4",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.6",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "autoprefixer": "^10.4.17",
+    "nodemon": "^3.0.3",
+    "postcss": "^8.4.33",
+    "rimraf": "^5.0.5",
+    "rolldown": "^1.0.0-beta.7",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.2",
+    "vite-plugin-node": "^3.1.0"
+  }
+}
