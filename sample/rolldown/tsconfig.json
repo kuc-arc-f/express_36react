@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist",
-    "target": "es5",
+    "target": "ESNext",
+    "module": "ESNext",
     "sourceMap": false,
     "strict": true,
     "removeComments": true,
